@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon.svg">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -89,21 +90,23 @@
         <section class="popular">
           <h2 class="visually-hidden">Популярные товары</h2>
           <ul class="popular-list">
-            <li class="popular-item">
+            <li class="popular-item popular-item-active">
               <article class="product">
                 <h3 class="visually-hidden">Квадрокоптер</h3>
                 <div class="product-img">
-                  <button class="arrow-left"></button>
-                  <button class="arrow-right"></button>
+                  <div class="product-arrow">
+                    <button class="arrow-left"></button>
+                    <button class="arrow-right"></button>
+                  </div>
                   <a class="product-img" href="#">
                     <img src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер">
                   </a>
                 </div>
                 <div class="product-main">
                   <p class="product-title">
-                    <strong>Порхает как бабочка, жалит как пчела!</strong>
+                    Порхает как бабочка, жалит как пчела!
                   </p>
-                  <p class="product-description">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру</p>
+                  <p class="product-description">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.</p>
                   <div class="popular-button">
                     <a class="popular-product-link" href="#">Подробнее</a>
                     <button class="switch" type="button"></button>
@@ -199,23 +202,23 @@
             <li class="catalog-item">
               <a class="catalog-link" href="#">
                 <div class="catalog-container">
-                  <img class="catalog-image" src="images/catalog/vr.png" width="96.95" height="54.99" alt="Виртуальная реальность">
+                  <img src="images/catalog/vr.png" width="96.95" height="54.99" alt="Виртуальная реальность">
                 </div>
                 <h3>Виртуальная реальность</h3>
               </a>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link" href="#">
-                <div class="catalog-container">
-                  <img class="catalog-image" src="images/catalog/monopod.png" width="85.87" height="117" alt="Моноподы для селфи">
+              <a class="catalog-link" href="catalog.html">
+                <div class="catalog-container catalog-monopods">
+                  <img  src="images/catalog/monopod.png" width="85.87" height="117" alt="Моноподы для селфи">
                 </div>
-                <h3>Моноподы для селфи</h3>
+                <h3>Моноподы<br> для селфи</h3>
               </a>
             </li>
             <li class="catalog-item">
               <a class="catalog-link" href="#">
                 <div class="catalog-container">
-                <img class="catalog-image" src="images/catalog/camera.png" width="71.02" height="87" alt="Экшн-камеры">
+                <img src="images/catalog/camera.png" width="71.02" height="87" alt="Экшн-камеры">
                 </div>
                 <h3>Экшн-камеры</h3>
               </a>
@@ -223,7 +226,7 @@
             <li class="catalog-item">
               <a class="catalog-link" href="#">
                 <div class="catalog-container">
-                  <img class="catalog-image" src="images/catalog/fitness.png" width="107.31" height="64.99" alt="Фитнес-браслеты">
+                  <img src="images/catalog/fitness.png" width="107.31" height="64.99" alt="Фитнес-браслеты">
                 </div>
                 <h3>Фитнес-браслеты</h3>
               </a>
@@ -231,7 +234,7 @@
             <li class="catalog-item">
               <a class="catalog-link" href="#">
                 <div class="catalog-container">
-                  <img class="catalog-image" src="images/catalog/smartwatch.png" width="56.01" height="97.98" alt="Умные часы">
+                  <img src="images/catalog/smartwatch.png" width="56.01" height="97.98" alt="Умные часы">
                 </div>
                 <h3>Умные часы</h3>
               </a>
@@ -239,7 +242,7 @@
             <li class="catalog-item">
               <a class="catalog-link" href="#">
                 <div class="catalog-container">
-                  <img class="catalog-image" src="images/catalog/copter.png" width="132.03" height="69.01" alt="Квадрокоптеры">
+                  <img src="images/catalog/copter.png" width="132.03" height="69.01" alt="Квадрокоптеры">
                 </div>
                 <h3>Квадрокоптеры</h3>
               </a>
@@ -256,7 +259,7 @@
             <button class="service-button" type="button">Кредит</button>
           </nav>
           <ul class="services-list">
-            <li class="services-item">
+            <li class="services-item-active">
               <div class="services-item-text">
                 <h2 class="services-item-title">Доставка</h2>              
                 <p class="service-item-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -284,38 +287,38 @@
         <a class="devilery-link" href="#">Доставим редкий товар под заказ</a>
       </div>
       <div class="index-bottom">
-        <section class="about-us-left">
+        <section class="about-us-left bottom-decoration">
           <h2 class="about-us">О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <p class="about-us-row">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="about-us-row">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="about-us-list">
             <li>Меловые линии</li>
             <li>СДИК</li>
             <li>ТоксБери</li>
           </ul>
-          <a class="about-us-link" href="#">Подробнее о нас</a>
+          <a class="button about-us-link" href="#">Подробнее о нас</a>
         </section>
-        <section class="about-us-right">
+        <section class="about-us-right bottom-decoration">
           <h2 class="about-us">Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+          <p class="about-us-row">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
           <div class="about-us-right-data">
             <h1 class="about-us-heading">Интернет-магазин «Девайс»</h1>
             <address class="about-us-addres">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
             <a class="phone" href="tel:78128121212">+7 (812) 812-12-12</a>
           </div>
-          <div class="about-us-right-time">
+          <div class="about-us-row">
             <p class="about-us-heading">Время работы</p>
-            <p>пн—пт: с 10:00 до 22:00</p>
-            <p>сб—вс: с 10:00 до 19:00</p>
+            <p class="about-us-time">пн—пт: с 10:00 до 22:00</p>
+            <p class="about-us-time">сб—вс: с 10:00 до 19:00</p>
           </div>
-          <a class="feedback" href="#">Напишите нам</a>
+          <a class="button feedback" href="#">Напишите нам</a>
         </section>
       </div>
       <section class="newsletter">
         <div class="newsletter-container">
           <div class="newsletter-top">
-            <h2 class="about-us">Подпишитесь на рассылку</h2>
-            <p class="newsletter-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <b class="about-us">Подпишитесь на рассылку</b>
+            <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
           <div class="newsletter-form">
             <form class="newsletter-form-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -332,7 +335,7 @@
     <footer class="index-footer">
       <div class="footer-container">
         <a class="footer-logo" href="index.html">
-          <img src="images/icons/logo.svg" width="145" height="36" alt="логотип магазина девайс">
+          <img src="images/icons/footer-logo.svg" width="145" height="36" alt="логотип магазина девайс">
         </a>
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>                    
@@ -357,18 +360,24 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link" href="https://t.me/htmlacademy">
+                <div class="social-container">
                 <img class="footer-social-image" src="images/icons/telegram.svg" width="14" height="12" alt="Telegram">
+                </div>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link" href="#">
-                <img class="footer-social-image" src="images/icons/youtube.svg" width="16" height="11" alt="YouTube">
+                <div class="social-container">
+                  <img class="footer-social-image" src="images/icons/youtube.svg" width="16" height="11" alt="YouTube">
+                </div>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link" href="#">
-                <img class="footer-social-image" src="images/icons/twitter.svg" width="15" height="14.06" alt="Twitter">
-              </a>
+                <div class="social-container">
+                  <img class="footer-social-image" src="images/icons/twitter.svg" width="15" height="14.06" alt="Twitter">
+                </div>
+               </a>
             </li>
           </ul>
           <a class="footer-developer" href="https://htmlacademy.ru/">
