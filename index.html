@@ -40,6 +40,41 @@
             <span class="cart-amount">2</span>
             <span>Корзина</span>
           </a>
+          <div class="popover_cart">
+            <div class="popover_content">            
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <a class="cart-item-link" href="#">
+                    <img src="images/popover/product_1_small.png" width="39px" height="43px" alt="Любительская селфи-палка">
+                    <p class="card_item_title">Любительская селфи-палка</p>
+                  </a>
+                  <button type="button" class="cart-item-button">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="#FFFFFF"/>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-item-link" href="#">
+                    <img src="images/popover/product_2_small.png" width="39px" height="43px" alt="Профессиональная селфи-палка">
+                    <p class="card_item_title">Профессиональная селфи-палка</p>
+                  </a>
+                  <button type="button" class="cart-item-button">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="#FFFFFF"/>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="cart-total">
+                <p>Товаров: 2</p>
+                <p>Сумма: 2000 ₽</p>
+              </div>
+              <a class="cart-open-link">Открыть корзину</a>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -346,8 +381,8 @@
       <div class="newsletter-container">
         <div class="newsletter-top">
           <h2 class="about-us newsletter-about-us">Подпишитесь на рассылку</h2>
-            <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
-              распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
+            распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
         <div class="newsletter-bottom">
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -444,48 +479,44 @@
       </button>
       <h2 class="modal-tittle">Доставка под заказ</h2>
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="field-group">
-          <label class="form-label" for="login">Ваше имя
-            <input type="text" class="input-name field" id="login" name="login" placeholder="Введите имя" required>
-            <span>Заполните это поле</span>
-          </label>
+        <p class="field-group name">
+          <label class="form-label" for="login">Ваше имя:</label>
+          <input type="text" class="input-name field" id="login" name="login" placeholder="Введите имя" required>
+          <span class="input-text">Добавьте имя</span>          
         </p>
-        <p class="field-group">
-          <label class="form-label" for="email">Ваш e-mail
-            <input type="email" class="input-email field" id="email" name="email" placeholder="e-mail" required>
-            <span>Забавный у вас адрес</span>
-          </label>
+        <p class="field-group email">
+          <label class="form-label" for="email">Ваш e-mail:</label>
+          <input type="email" class="input-email field" id="email" name="email" placeholder="почта" required>
+          <span class="input-text">Забавный у вас адрес</span>          
         </p>
-        <p class="field-group">
-          <label class="form-label" for="description">Что нужно привезти
-            <input type="text" class="input-description field" id="description" name="description"
-              placeholder="В свободной форме" required>
-          </label>
+        <p class="field-group description">
+          <label class="form-label" for="description">Что нужно привезти:</label>
+          <input type="text" class="input-description field" id="description" name="description" placeholder="В свободной форме" required>          
         </p>
 
-        <div class="field-group">
-          <label class="form-label" for="amount">
-            Количество:
-          </label>
-          <span class="tooltip-modal">
-            <button class="tooltip-toggle">
-
-            </button>
-            <span class="tooltip-text">
-              Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+        <div class="field-group amount">
+          <span class="span-form-label">
+            <label class="form-label" for="amount">
+              Количество:
+            </label>
+            <span class="tooltip-modal">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+              <span class="input-text tooltip-text" role="tooltip" id="tooltip-label">
+                Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> к провозу багажа.
+              </span>
             </span>
-          </span>
-          <div>
-            <button>
-              <span class="button-minus"></span>
+          </span>  
+          <div class="form-amount">
+            <button class="button-amount button-minus">
+              <span class="visually-hidden">Уменьшить</span>
             </button>
-            <input type="number" min="1" value="1" id="amount" name="amount" placeholder="1">
+            <input class="input-amount field" type="number" readonly min="1" value="1" id="amount" name="amount" placeholder="1">          
+            <button class="button-amount button-plus">
+              <span class="visually-hidden">Увеличить</span>
+            </button>
           </div>
-          <button>
-            <span class="button-plus"></span>
-          </button>
         </div>
-        <button class="button" type="submit">
+        <button class="button button-submit" type="submit">
           <span>Отправить</span>
         </button>
       </form>
