@@ -20,18 +20,14 @@
       </svg>
     </a>
     <div class="header-up">
-      <ul class="header-up-list">
-        <li class="header-up-item">
-          <form class="header-up-saerch" action="https://echo.htmlacademy.ru" method="get">
-            <label class="header-up-saerch-label">
-              <input class="header-up-search-input" type="text" name="saerch" placeholder="Текст поиска">
-            </label>
-            <button class="header-up-search-buttom" type="submit"><span class="text-search-button">Найти</span></button>
-          </form>
-        </li>
-        <li class="header-up-item">
-          <a class="header-up-link user" href="#">Войти</a>
-        </li>
+      <form class="header-up-saerch" action="https://echo.htmlacademy.ru" method="get">
+        <label class="header-up-saerch-label">
+          <input class="header-up-search-input" type="text" name="saerch" placeholder="Текст поиска">
+        </label>
+        <button class="header-up-search-buttom" type="submit"><span class="text-search-button">Найти</span></button>
+      </form>
+      <a class="header-up-link user" href="#">Войти</a>
+      <ul class="header-up-list">        
         <li class="header-up-item">
           <a class="header-up-link compare" href="#">Сравнить</a>
         </li>
@@ -40,6 +36,41 @@
             <span class="cart-amount">2</span>
             <span>Корзина</span>
           </a>
+          <div class="popover_cart">
+            <div class="popover_content">            
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <a class="cart-item-link" href="#">
+                    <img src="images/popover/product_1_small.jpeg" width="39" height="43" alt="Любительская селфи-палка">
+                    <p class="card_item_title">Любительская селфи-палка</p>
+                  </a>
+                  <button type="button" class="cart-item-button">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="#FFFFFF"/>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-item-link" href="#">
+                    <img src="images/popover/product_2_small.jpeg" width="39" height="43" alt="Профессиональная селфи-палка">
+                    <p class="card_item_title">Профессиональная селфи-палка</p>
+                  </a>
+                  <button type="button" class="cart-item-button">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="#FFFFFF"/>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="cart-total">
+                <p>Товаров: 2</p>
+                <p>Сумма: 2000 ₽</p>
+              </div>
+              <a class="cart-open-link">Открыть корзину</a>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -99,13 +130,13 @@
           <li class="popular-item popular-item-active">
             <article class="product">
               <h3 class="visually-hidden">Квадрокоптер</h3>
-              <div class="product-img">
+              <div class="product-img-container">
                 <div class="product-arrow">
-                  <button class="arrow-left"></button>
-                  <button class="arrow-right"></button>
+                  <button class="arrow arrow-left"></button>
+                  <button class="arrow arrow-right"></button>
                 </div>
                 <a class="product-img-link" href="#">
-                  <img src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер">
+                  <img class="product-img" src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер">
                 </a>
               </div>
               <div class="product-main">
@@ -138,11 +169,11 @@
           <li class="popular-item">
             <article class="product">
               <h3 class="visually-hidden">Фитнес-браслет</h3>
-              <div class="product-img">
+              <div class="product-img-container">
                 <button class="arrow-left"></button>
                 <button class="arrow-right"></button>
                 <a class="product-img-link" href="#">
-                  <img src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
+                  <img class="product-img" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
                 </a>
               </div>
               <div class="product-main">
@@ -173,11 +204,11 @@
           <li class="popular-item">
             <article class="product">
               <h3 class="visually-hidden">Моноподы для селфи</h3>
-              <div class="product-img">
+              <div class="product-img-container">
                 <button class="arrow-left"></button>
                 <button class="arrow-right"></button>
                 <a class="product-img-link" href="#">
-                  <img src="images/slider/slider-3.png" width="560" height="560" alt="Моноподы для селфи">
+                  <img class="product-img" src="images/slider/slider-3.png" width="560" height="560" alt="Моноподы для селфи">
                 </a>
               </div>
               <div class="product-main">
@@ -283,7 +314,7 @@
         <ul class="services-list">
           <li class="services-item-active services-item">
             <div class="services-item-text">
-              <h2 class="services-item-title">Доставка</h2>
+              <h3 class="services-item-title">Доставка</h3>
               <p class="service-item-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду
                 совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
@@ -291,7 +322,7 @@
           </li>
           <li class="services-item">
             <div class="services-item-text">
-              <h2 class="services-item-title">Гарантия</h2>
+              <h3 class="services-item-title">Гарантия</h3>
               <p class="service-item-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
                 переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </div>
@@ -299,7 +330,7 @@
           </li>
           <li class="services-item">
             <div class="services-item-text">
-              <h2 class="services-item-title">Кредит</h2>
+              <h3 class="services-item-title">Кредит</h3>
               <p class="service-item-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут
                 для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
             </div>
@@ -346,8 +377,8 @@
       <div class="newsletter-container">
         <div class="newsletter-top">
           <h2 class="about-us newsletter-about-us">Подпишитесь на рассылку</h2>
-            <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
-              распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
+            распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
         <div class="newsletter-bottom">
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -444,48 +475,44 @@
       </button>
       <h2 class="modal-tittle">Доставка под заказ</h2>
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="field-group">
-          <label class="form-label" for="login">Ваше имя
-            <input type="text" class="input-name field" id="login" name="login" placeholder="Введите имя" required>
-            <span>Заполните это поле</span>
-          </label>
+        <p class="field-group name">
+          <label class="form-label" for="login">Ваше имя:</label>
+          <input type="text" class="input-name field" id="login" name="login" placeholder="Введите имя" required>
+          <span class="input-text">Добавьте имя</span>          
         </p>
-        <p class="field-group">
-          <label class="form-label" for="email">Ваш e-mail
-            <input type="email" class="input-email field" id="email" name="email" placeholder="e-mail" required>
-            <span>Забавный у вас адрес</span>
-          </label>
+        <p class="field-group email error">
+          <label class="form-label" for="email">Ваш e-mail:</label>
+          <input type="email" class="input-email field error" id="email" name="email" placeholder="почта" required>
+          <span class="input-text text-error">Забавный у вас адрес</span>          
         </p>
-        <p class="field-group">
-          <label class="form-label" for="description">Что нужно привезти
-            <input type="text" class="input-description field" id="description" name="description"
-              placeholder="В свободной форме" required>
-          </label>
+        <p class="field-group description">
+          <label class="form-label" for="description">Что нужно привезти:</label>
+          <input type="text" class="input-description field" id="description" name="description" placeholder="В свободной форме" required>          
         </p>
 
-        <div class="field-group">
-          <label class="form-label" for="amount">
-            Количество:
-          </label>
-          <span class="tooltip-modal">
-            <button class="tooltip-toggle">
-
-            </button>
-            <span class="tooltip-text">
-              Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+        <div class="field-group amount">
+          <span class="span-form-label">
+            <label class="form-label" for="amount">
+              Количество:
+            </label>
+            <span class="tooltip-modal">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+              <span class="input-text tooltip-text" role="tooltip" id="tooltip-label">
+                Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> к провозу багажа.
+              </span>
             </span>
-          </span>
-          <div>
-            <button>
-              <span class="button-minus"></span>
+          </span>  
+          <div class="form-amount">
+            <button class="button-amount button-minus">
+              <span class="visually-hidden">Уменьшить</span>
             </button>
-            <input type="number" min="1" value="1" id="amount" name="amount" placeholder="1">
+            <input class="input-amount field" type="number" readonly min="1" value="1" id="amount" name="amount" placeholder="1">          
+            <button class="button-amount button-plus">
+              <span class="visually-hidden">Увеличить</span>
+            </button>
           </div>
-          <button>
-            <span class="button-plus"></span>
-          </button>
         </div>
-        <button class="button" type="submit">
+        <button class="button button-submit" type="submit">
           <span>Отправить</span>
         </button>
       </form>
