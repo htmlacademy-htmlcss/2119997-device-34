@@ -176,7 +176,7 @@ img {
   background-image: url(../images/icons/search.svg);
   background-repeat: no-repeat;
   background-position: 15px 10px;
-  font-family: "Rubik";
+  font-family: "Rubik",sans-serif;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 45px;
@@ -263,7 +263,7 @@ img {
   padding: 0;
   opacity: 0.3;
   cursor: pointer;
-  font-family: "Rubik";
+  font-family: "Rubik",sans-serif;
   font-size: 18px;
   line-height: 30px;
   right: 28px;
@@ -571,7 +571,7 @@ img {
 }
 
 .header-bottom-navigation-user-link {
-  font-family: "Raleway";
+  font-family: "Raleway",sans-serif;
   line-height: 21px;
   color: #000000;
   text-decoration: none;
@@ -1310,7 +1310,7 @@ img {
 }
 
 .inner-header-title {
-  font-family: 'Raleway';
+  font-family: "Raleway",sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin: 0;
@@ -1380,7 +1380,7 @@ img {
 }
 
 .catalog-filter-heading {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
@@ -1687,7 +1687,7 @@ img {
 }
 
 .catalog-products-sorting {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
@@ -1805,7 +1805,7 @@ img {
 }
 
 .button-more {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
@@ -1887,7 +1887,7 @@ img {
 
 .pagination-next,
 .pagination-prev {
-  font-family: 'Raleway';
+  font-family: "Raleway",sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -1966,7 +1966,7 @@ img {
 }
 
 .footer-navigation-link {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -2151,7 +2151,7 @@ img {
 
 .modal-tittle {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
